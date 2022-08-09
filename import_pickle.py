@@ -1,6 +1,6 @@
 import pickle
 import streamlit as st
-from sklearn.tree import DecisionTreeClassifier
+from sklearn import tree
 with open('DT_model_pickle','rb') as file:
     clf = pickle.load(file)
 
