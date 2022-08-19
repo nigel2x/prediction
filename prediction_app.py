@@ -17,7 +17,7 @@ from pprint import pprint
 scope = ["https://spreadsheets.google.com/feeds",'https://www.googleapis.com/auth/spreadsheets',"https://www.googleapis.com/auth/drive.file","https://www.googleapis.com/auth/drive"]
 creds = ServiceAccountCredentials.from_json_keyfile_name("key_sheet.json", scope)
 client = gspread.authorize(creds)
-sheet = client.open("stu_info").sheet1
+sheet = client.open("stu_info").ชีต1
 
 #เรียกใช้ model
 with open('svm_model','rb') as file:
